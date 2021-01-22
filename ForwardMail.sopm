@@ -12,6 +12,7 @@
     <Filelist>
         <File Permission="644" Location="Kernel/Config/Files/XML/ForwardMail.xml" />
         <File Permission="644" Location="Kernel/System/PostMaster/Filter/ForwardMail.pm" />
+        <File Permission="644" Location="doc/en/ForwardMail.pod" />
         <File Permission="644" Location="var/packagesetup/ForwardMail.pm" />
     </Filelist>
     <CodeInstall Type="post"><![CDATA[

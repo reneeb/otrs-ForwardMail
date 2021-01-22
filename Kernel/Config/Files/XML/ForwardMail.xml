@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<otrs_config version="2.0" init="Application">
+    <Setting Name="PostMaster::PostFilterModule###016-ForwardMail" Required="0" Valid="1">
+        <Description Translatable="1">Forward a mail when special X-OTRS-... mail headers are used.</Description>
+        <Navigation>Core::Email::PostMaster</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::PostMaster::Filter::ForwardMail</Item>
+            </Hash>
+        </Value>
+    </Setting>
+</otrs_config>

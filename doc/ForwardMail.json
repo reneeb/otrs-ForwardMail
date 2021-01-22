@@ -1,0 +1,23 @@
+{
+    "name": "ForwardMail",
+    "version": "6.0.1",
+    "framework": [
+        "6.0.x"
+    ],
+    "vendor": {
+        "name":  "Perl-Services.de",
+        "url": "http://www.perl-services.de"
+    },
+    "license": "GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007",
+    "description" : {
+        "en": "Forward mails via postmaster filter.",
+        "de": "Mails per Postmaster-Filter weiterleiten."
+    },
+    "exclude_files" : [
+        "doc/ForwardMail.json"
+    ],
+    "code": [
+        { "type": "Install", "version": 0 },
+        { "type": "Upgrade", "version": 0 }
+    ]
+}

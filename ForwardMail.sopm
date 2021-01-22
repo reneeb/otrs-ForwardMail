@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otrs_package version="1.0">
+    <!-- GENERATED WITH OTRS::OPM::Maker::Command::sopm (1.4) -->
+    <Name>ForwardMail</Name>
+    <Version>6.0.1</Version>
+    <Framework>6.0.x</Framework>
+    <Vendor>Perl-Services.de</Vendor>
+    <URL>http://www.perl-services.de</URL>
+    <Description Lang="de">Mails per Postmaster-Filter weiterleiten.</Description>
+    <Description Lang="en">Forward mails via postmaster filter.</Description>
+    <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
+    <Filelist>
+        <File Permission="644" Location="Kernel/Config/Files/XML/ForwardMail.xml" />
+        <File Permission="644" Location="Kernel/System/PostMaster/Filter/ForwardMail.pm" />
+        <File Permission="644" Location="var/packagesetup/ForwardMail.pm" />
+    </Filelist>
+    <CodeInstall Type="post"><![CDATA[
+        $Kernel::OM->Get('var::packagesetup::' . $Param{Structure}->{Name}->{Content} )->CodeInstall();
+    ]]></CodeInstall>
+    <CodeUpgrade Type="post"><![CDATA[
+        $Kernel::OM->Get('var::packagesetup::' . $Param{Structure}->{Name}->{Content} )->CodeUpgrade();
+    ]]></CodeUpgrade>
+</otrs_package>

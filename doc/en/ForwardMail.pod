@@ -1,0 +1,19 @@
+=head1 ForwardMail
+
+This addon enables you to define a PostmasterFilter that automatically
+forwards the mail. You can use everything in the filter section of the
+postmaster filter.
+
+To forward a mail, you need to set the C<X-OTRS-ForwardMail-To> header.
+You can either use a mail address there or a placeholder like
+C<< <OTRS_TICKET_DynamicField_ManagerEmail> >>.
+
+
+=begin html
+
+<p><center><img src="https://github.com/reneeb/otrs-ForwardMail/raw/master/doc/image/filter.png" /></center></p>
+
+=end html
+
+In this example all mails that are sent to C<dummy+forward@perl-services.de> are
+forwarded to C<any.address@perl-services.de>.

@@ -14,7 +14,8 @@
         "de": "Mails per Postmaster-Filter weiterleiten."
     },
     "exclude_files" : [
-        "doc/ForwardMail.json"
+        "doc/ForwardMail.json",
+        "doc/image/filter.png"
     ],
     "code": [
         { "type": "Install", "version": 0 },
